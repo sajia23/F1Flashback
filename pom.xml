@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.sajia23</groupId>
+    <artifactId>F1Flashback</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <!-- This line sets the name of the Maven project to "JavaProjectTemplate". It can be used to give the project a more descriptive name than just the artifact ID. -->
+    <name>JavaProjectTemplate</name>
+    <!-- Specifies the URL where information about the project can be found -->
+    <url>http://maven.apache.org</url>
+    <!-- The <properties> element is used to define project-wide properties.
+     These properties can be referenced throughout the pom.xml file,
+     and can also be used in other Maven files like profiles and settings. -->
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <!-- The `maven.compiler.target` property specifies the version of the JVM that the
+     compiled code should be compatible with. In this case, the compiled code is
+     compatible with version 1.8 of the Java Virtual Machine (JVM). This property
+     is used by the Maven Compiler Plugin to set the target JVM version. -->
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- The `project.build.sourceEncoding` property specifies the character encoding
+     used by the source files in the project. In this case, the encoding is UTF-8.
+     This property is used by various plugins to ensure that the source code is read
+     and written correctly. -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- The `checkstyle.version` property specifies the version of the Checkstyle plugin
+     that is used to enforce code style and formatting rules. In this case, the
+     Checkstyle plugin version is 8.30. This property is used by the Maven Checkstyle
+     Plugin to configure the Checkstyle rules. -->
+        <checkstyle.version>8.30</checkstyle.version>
+        <!-- The `checkstyle.plugin.version` property specifies the version of the Checkstyle
+     plugin that is used to execute Checkstyle checks during the build. In this case,
+     the Checkstyle plugin version is 3.1.0. This property is used by the Maven Checkstyle
+     Plugin to configure the plugin execution. -->
+        <checkstyle.plugin.version>3.1.0</checkstyle.plugin.version>
+        <!-- The `sevntu.checkstyle.plugin.version` property specifies the version of the
+     Sevntu Checkstyle plugin that is used to extend Checkstyle with additional
+     rules and features. In this case, the Sevntu Checkstyle plugin version is 1.29.0.
+     This property is used by the Maven Checkstyle Plugin to configure the Sevntu
+     Checkstyle rules. -->
+        <sevntu.checkstyle.plugin.version>1.29.0</sevntu.checkstyle.plugin.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.ws/spring-xml -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>3.0.7.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.0.20.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>4.0.9.RELEASE</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.0.9.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.19.0</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,13 @@
+// Syntax
+<measurement>[,<tag_key>=<tag_value>[,<tag_key>=<tag_value>]] <field_key>=<field_value>[,<field_key>=<field_value>] [<timestamp>]
+
+lap,driver_number=44,meeting_key=2,session_key=2 \
+duration_sector_1=1 duration_sector_2=2 duration_sector_3=3 \
+i1_speed=2 i2_speed=3 is_pit_out_lap=false lap_duration=4 lap_number=0 st_speed=4 \
+segments_sector_1= "" segments_sector_2= ""
+
+
+location,driver_number=44,meeting_key=2,session_key=2 x=1.1 y=2.2 z=3.3 timestamp
+car,driver_number=44,meeting_key=2,session_key=2 brake=0 n_gear=1 rpm=1111 speed=234 drs=22 throttle=88 timestamp
+position,driver_number=44,meeting_key=2,session_key=2 position=3 timestamp
+team_radio,driver_number=44,meeting_key=2,session_key=2 recording_url timestamp
