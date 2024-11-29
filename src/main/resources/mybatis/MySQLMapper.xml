@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="com.example.crawler.mapper.MySQLMapper">
+    <insert id="insertCrawlResult">
+        INSERT INTO crawl_results (url, title, created_at)
+        VALUES (#{url}, #{title}, NOW());
+    </insert>
+</mapper>
